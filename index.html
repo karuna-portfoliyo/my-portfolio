@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Karuna Goswami | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #fbe4ff, #e0f7ff);
+            color: #333;
+            transition: background 0.5s, color 0.5s;
+        }
+
+        .dark-mode {
+            background: #121212;
+            color: #eee;
+        }
+
+        .portfolio-container {
+            display: flex;
+            max-width: 1200px;
+            margin: 40px auto;
+            background-color: #fff;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 0 25px rgba(0,0,0,0.2);
+            transition: background 0.5s, color 0.5s;
+        }
+
+        .dark-mode .portfolio-container {
+            background-color: #1f1f1f;
+        }
+
+        .left-box {
+            width: 35%;
+            background: #f2f4ff;
+            padding: 30px;
+            text-align: center;
+            transition: background 0.5s;
+        }
+
+        .dark-mode .left-box {
+            background: #2b2b2b;
+        }
+
+        .right-box {
+            width: 65%;
+            padding: 30px;
+        }
+
+        .profile {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: top center;
+            background-color: #fff;
+            border: 4px solid #00bcd4;
+            margin-top: 20px;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            color: #ff4081;
+            font-size: 24px;
+            margin: 10px 0;
+        }
+
+        .tagline {
+            color: #00bcd4;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .contact p {
+            color: #444;
+            font-size: 14px;
+            margin: 5px 0;
+        }
+
+        .contact a, .linkedin {
+            color: #ff4081;
+            text-decoration: none;
+        }
+
+            .contact a:hover, .linkedin:hover {
+                text-decoration: underline;
+            }
+
+        h2 {
+            color: #00bcd4;
+            border-bottom: 2px dashed #ff4081;
+            padding-bottom: 4px;
+            margin-top: 25px;
+        }
+
+        ul {
+            list-style: square;
+            margin-left: 20px;
+            padding-left: 0;
+        }
+
+            ul li {
+                margin-bottom: 8px;
+                line-height: 1.6;
+            }
+
+        .right-box section {
+            margin-bottom: 30px;
+        }
+
+        .skills span {
+            display: inline-block;
+            margin: 6px 6px;
+            padding: 6px 12px;
+            background: #ffbd39;
+            color: #000;
+            border-radius: 20px;
+            font-weight: bold;
+            transition: transform 0.3s;
+        }
+
+            .skills span:hover {
+                transform: scale(1.1);
+                background: #ffc107;
+            }
+
+        .dark-mode .skills span {
+            background: #ff8c00;
+            color: #000;
+        }
+
+        .btns {
+            margin: 20px auto;
+            text-align: center;
+        }
+
+            .btns button {
+                padding: 8px 16px;
+                margin: 5px;
+                border: none;
+                border-radius: 6px;
+                font-weight: bold;
+                cursor: pointer;
+                transition: background 0.3s;
+            }
+
+        .toggle-btn {
+            background: #ff4081;
+            color: #fff;
+        }
+
+            .toggle-btn:hover {
+                background: #d81b60;
+            }
+
+        @media (max-width: 768px) {
+            .portfolio-container {
+                flex-direction: column;
+            }
+
+            .left-box, .right-box {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="btns">
+        <button class="toggle-btn" onclick="toggleDarkMode()">🌓 Toggle Dark Mode</button>
+    </div>
+
+    <div class="portfolio-container">
+        <div class="left-box">
+            <img src="profile.jpg" alt="Karuna Goswami" class="profile">
+            <h1>Karuna Goswami</h1>
+            <p class="tagline">🔥 Software & Web Developer 🔥</p>
+            <div class="contact">
+                <p>📞 9928191450</p>
+                <p>✉️ Karunagoswami1008@gmail.com</p>
+                <<a href="https://www.linkedin.com/in/karuna-goswami-41a113321"
+   target="_blank"
+   style="display:inline-block; padding:8px 16px; background:#0077b5; color:#fff; border-radius:6px; font-weight:bold; text-decoration:none;">
+    🔗 Visit LinkedIn Profile
+
+                <p>📍 Changoder, Ahmedabad</p>
+            </div>
+            <h2>💻 Skills</h2>
+            <div class="skills">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>React.js</span>
+                <span>Python</span>
+                <span>Java</span>
+                <span>C++</span>
+                <span>Swift</span>
+                <span>Xcode</span>
+                <span>XAMPP</span>
+                <span>VS Code</span>
+            </div>
+            <h2>🗣️ Languages</h2>
+            <p>Hindi: ⭐⭐⭐⭐⭐</p>
+            <p>English: ⭐⭐⭐☆</p>
+        </div>
+
+        <div class="right-box">
+            <section>
+                <h2>🎯 Objective</h2>
+                <p>A passionate developer skilled in both frontend and backend technologies. I enjoy building clean, user-friendly, and fast-loading applications that solve real problems.</p>
+            </section>
+
+            <section>
+                <h2>🎓 Education</h2>
+                <ul>
+                    <li><strong>MCA:</strong> Mohanlal Sukhadia University – 7 CGPA</li>
+                    <li><strong>BCA:</strong> RNT College, Kapasan – 73%</li>
+                    <li><strong>12th:</strong> GSS School, Surpur – 66%</li>
+                    <li><strong>10th:</strong> GSS School, Surpur – 62%</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>🚀 Projects</h2>
+                <ul>
+                    <li><strong>Radhe Sadi Collection:</strong> Fashion saree shop website using HTML, CSS, JS</li>
+                    <li><strong>Online Attendance Maker:</strong> iOS app built using Swift & Xcode</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>🏆 Achievements</h2>
+                <ul>
+                    <li>⚡ Increased student engagement by 30%</li>
+                    <li>✅ Delivered 3 projects with 25% satisfaction boost</li>
+                    <li>🛍️ Boosted saree shop sales by 40%</li>
+                    <li>📲 Attendance app used by 150+ students</li>
+                </ul>
+            </section>
+        </div>
+    </div>
+
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+        }
+    </script>
+</body>
+</html>
